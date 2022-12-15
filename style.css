@@ -23,11 +23,6 @@ section {
   perspective: 900px;
 }
 
-/* @media (min-width: 500px) {
-  section {
-  grid-template-columns: repeat(5, minmax(75px, 15vh));
-  grid-template-rows: repeat(5, minmax(75px, 15vw));}
-} */
 @media (min-width: 700px) {
   section {
   grid-template-columns: repeat(5, 6rem);
