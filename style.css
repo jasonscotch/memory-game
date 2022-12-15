@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Architects Daughter', cursive;
+}
+
+body {
+  height: 100vh;
+  background-image: url('./Photos/background4.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(5,8rem);
+  grid-template-rows: repeat(5,8rem);
+  grid-gap: .5rem;
+  perspective: 900px;
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: rgba(203, 203, 203, 0.308) 0px 5px 15px;
+
+}
+
+.face, 
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+  transform: scaleX(-1);
+}
+
+.back {
+  background-color: beige;
+  backface-visibility: hidden;
+}
+
+.flipCard {
+  transform: rotateY(180deg);
+}
+
+h1 {
+  color: beige;
+}
+
+
+
+#dialog {
+  position: fixed;
+  z-index: 101;
+  padding: 1%;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+}
+
+dialog#judgment {
+ text-align: center; 
+ 
+}
+
+#win {
+  position: fixed;
+  z-index: 101;
+  padding: 1%;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.right {
+  text-align: center;
+  float: right;
+  margin: 1%;
+  padding: 3px;
+}
+
+#center{
+  grid-column: 3;
+  grid-row: 3;
+}
+
+button {
+  padding: 3px;
+}

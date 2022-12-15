@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Score: <span class="scoreCount"></span> High Score: <span class="highScore"></span></h1>
+    <br>
+    
+    <section><div id="center"></div></section>
+    <br>
+   
+   
+    <button onclick="openModal()">Toss A Coin...</button>
+
+  <!-- <div class="popups"> -->
+    <dialog id="dialog">Hmmmmm....
+      <br/>
+      <img id="judgment" src="./Photos/fuuuuuuu.gif" alt="Geralt judging you">
+  
+      <button onclick="closeModal()" class="right">Restart</button>
+    </dialog>
+
+    <dialog id="win">I guess you win this round...
+      <br/>
+      <img id="youWin" src="./Photos/you win.gif" alt="Jaskier singing">
+    
+      <button onclick="closeWinModal()" class="right">Restart</button>
+    </dialog>
+  <!-- </div> -->
+   
+    <script src="script.js"></script>
+  </body>
+</html>
