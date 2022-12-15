@@ -16,10 +16,27 @@ body {
 
 section {
   display: grid;
-  grid-template-columns: repeat(5,8rem);
-  grid-template-rows: repeat(5,8rem);
+  grid-template-columns: repeat(5, 4rem);
+  grid-template-rows: repeat(5, 4rem);
+  /* grid-template-rows: repeat(5,8em); */
   grid-gap: .5rem;
   perspective: 900px;
+}
+
+/* @media (min-width: 500px) {
+  section {
+  grid-template-columns: repeat(5, minmax(75px, 15vh));
+  grid-template-rows: repeat(5, minmax(75px, 15vw));}
+} */
+@media (min-width: 700px) {
+  section {
+  grid-template-columns: repeat(5, 6rem);
+  grid-template-rows: repeat(5, 6rem);}
+}
+@media (min-width: 900px) {
+  section {
+  grid-template-columns: repeat(5, 8rem);
+  grid-template-rows: repeat(5, 8rem);}
 }
 
 .card {
