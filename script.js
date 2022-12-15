@@ -74,6 +74,12 @@ const cardGenerator = () => {
       checkCards(e);
       
     });
+    card.addEventListener('touchend', (e) => {
+      card.classList.toggle('flipCard');
+      
+      checkCards(e);
+      
+    });
   });
 };
 
